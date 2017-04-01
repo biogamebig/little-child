@@ -46,10 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Event.cs" />
      <Compile Include="Assets\Script\Loadscene.cs" />
      <Compile Include="Assets\Script\PlayerCtrl.cs" />
      <Compile Include="Assets\Script\Shake.cs" />
-     <None Include="Assets\Resourcse\XMLFile1.xml" />
+     <Compile Include="Assets\Script\xml.cs" />
+     <None Include="Assets\Resources\XMLFile1.xml" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
