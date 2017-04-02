@@ -24,7 +24,7 @@ public class xml : MonoBehaviour {
         int picture;
         string[] choice;
 
-        public Conversation(char type, string[] choice, int pic, int ids) {
+        public Conversation(char type, string[] choice, int pic) {
             this.type = type;
             this.choice = choice;
             this.picture = pic;
@@ -94,7 +94,7 @@ public class xml : MonoBehaviour {
         //  if equl 0 not add conversation 
         if(index != 0  ){
           tempTxt = item.text.Split('|');
-          Conversation conversation = new Conversation(item.type[0], tempTxt,Int32.Parse(item.picture),Int32.Parse(item.id));
+          Conversation conversation = new Conversation(item.type[0], tempTxt,Int32.Parse(item.picture));
           //Debug.Log(conversation.getType());
           //Debug.Log(conversation.getChoices());
           conversations.Add(conversation);
